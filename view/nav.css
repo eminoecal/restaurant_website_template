@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Verteilt die Elemente */
+    padding: 10px; /* Optional: Innenabstand */
+    background-color: black; /* Hier kannst du die Hintergrundfarbe der Navigationsleiste ändern */
+    height: 30px;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center; /* Vertikal ausrichten */
+    gap: 10px; /* Abstand zwischen Logo und Titel */
+    justify-content: flex-start; /* Alle Elemente nach links ausrichten */
+}
+
+#restaurant_titel {
+    text-align: left;
+    font-size: 24px; /* Optional: Schriftgröße für den Titel */
+}
+
+.nav_btns {
+    display: flex; /* Buttons in einer Zeile */
+    gap: 10px; /* Abstand zwischen Buttons */
+    margin-left: auto; /* Platziert die Buttons auf der rechten Seite */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ddd;
+}
