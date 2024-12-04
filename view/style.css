@@ -3,14 +3,12 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 100;
-    font-style: normal;
 }
 
-#bild_gross_home {
-    height: 50vh;
-    background-size: cover; /* Passt das Bild an, um den gesamten Bereich zu füllen */
-    background-position: center; /* Zentriert das Bild */
-    background-repeat: no-repeat; 
+#bg { /* Hintergrundbild */
+    background-image: url("/images/hintergrund_gross_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

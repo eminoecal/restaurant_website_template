@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- Das ist der anfang der Homepage -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Schriftarten -->
@@ -6,29 +6,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-
+    <!-- Meta-Daten -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/view/nav.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Eigenes CSS -->
     <link rel="stylesheet" href="/view/style.css">
-    <title>Restaurant Template</title> <!-- Der Name ihrer Gastronomie hier eingeben -->
+    <title>Restaurant Template</title>
 </head>
 <body>
-    <nav>
-        <div id="logo-container">
-            <img id="restaurant_logo" src="/images/logo_hier_einfuegen.png" alt="Restaurant Logo" height="40px"> <!-- Restaurant Logo im Ordner "images " hochladen und anschließend die source hier einfügen -->
-            <h1 id="restaurant_titel">Restaurant Name</h1> <!-- Der Name ihrer Gastronomie hier eingeben -->
-        </div>
-        <div class="nav_btns">
-            <a href="/index.html"><button id="home_btn">Home</button></a>
-            <a href="/pages/speisekarte.html"><button id="speisekarte_btn">Speisekarte</button></a>
-            <a href="/pages/ueberuns.html"><button id="ueberuns_btn">Über uns</button></a>
-            <a href="/pages/kontakt.html"><button id="kontakt_btn">Kontakt</button></a>
-            <a href="/pages/lieferservice.html"><button id="lieferservice_btn">Lieferservice</button></a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo und Titel -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img id="restaurant_logo" src="/images/logo_hier_einfuegen.png" alt="Restaurant Logo" height="40" class="me-2">
+                <span id="restaurant_titel" class="text-warning">Restaurant Name</span>
+            </a>
+            <!-- Nav Hamburger für mobile geräte -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-warning" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="/pages/speisekarte.html">Speisekarte</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="/pages/ueberuns.html">Über uns</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="/pages/kontakt.html">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link text-warning" href="/pages/lieferservice.html">Lieferservice</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main>
-        <img id="bild_gross_home" src="/images/hintergrund_gross_home.jpg" alt="Hintergrundbild">
+
+    <main class="vh-100">
+        <div id="bg" class="h-100 w-100"></div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+    

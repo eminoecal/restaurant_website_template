@@ -1,54 +1,22 @@
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px; /* Innenabstand für mobile und größere Geräte */
-    background-color: black;
-    color: #e8c731;
-    height: 60px; /* Feste Höhe für die Navigation */
-    width: 100%; /* Breite der Navigation */
-    position: fixed; /* Fixiert die Navigation */
-    top: 0; /* Setzt die Navigation oben im Viewport */
-    z-index: 1000; /* Bringt die Navigation über andere Inhalte */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Schattierung */
-}
 
-body {
-    margin: 0;
-    padding-top: 60px; /* Platz für die fixierte Navigation */
-}
-
-#logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Abstand zwischen Logo und Titel */
-    justify-content: flex-start;
-}
-
+/* Logo und Titel */
 #restaurant_titel {
-    color: #e8c731;
     font-size: 24px;
+    color: #e8c731;
 }
 
-.nav_btns {
-    margin-right: 2%;
-    display: flex;
-    gap: 10px; /* Abstand zwischen den Buttons */
-    margin-left: auto;
-}
-
-button {
-    color: black;
-    padding: 10px 15px; /* Konsistentes Padding */
-    border: none;
-    background-color: #e8c731;
-    cursor: pointer;
+/* Anpassungen für Navigationslinks */
+.nav-link {
     font-size: 16px;
-    font-family: "Karla", sans-serif;
     font-weight: bold;
-    border-radius: 5px; /* Optional: Abgerundete Ecken */
+    transition: color 0.3s ease;
 }
 
-button:hover {
-    background-color: #ddd;
+.nav-link:hover {
+    color: #fff;
+}
+
+/* Fix für Padding, da Navbar fixiert ist */
+body {
+    padding-top: 60px;
 }
