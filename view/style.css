@@ -7,3 +7,10 @@ html, body {
     font-weight: 100;
     font-style: normal;
 }
+
+#bild_gross_home {
+    height: 50vh;
+    background-size: cover; /* Passt das Bild an, um den gesamten Bereich zu füllen */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; 
+}
