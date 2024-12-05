@@ -6,9 +6,16 @@ html, body {
     font-weight: 100;
 }
 
+
 #bg { /* Hintergrundbild */
     background-image: url("/images/hintergrund_gross_home.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(40%);
+    z-index: 1; /* Hintergrund bleibt hinter dem Inhalt */
+}
+
+.content {
+    z-index: 2; /* Inhalt wird über dem Hintergrund angezeigt */
 }
