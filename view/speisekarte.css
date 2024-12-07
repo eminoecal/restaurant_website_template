@@ -32,6 +32,9 @@ body {
     margin: 0 auto; /* Automatischer Abstand um den Container */
     position: relative;
     z-index: 1; /* Damit der Inhalt über dem Hintergrund erscheint */
+    overflow-y: auto; /* Ermöglicht Scrollen, wenn der Inhalt zu groß wird */
+    max-height: 90vh; /* Maximale Höhe der Speisekarte */
+    margin-top: 100px; /* Platz unter der fixierten Navigation */
 }
 
 /* Kategorieüberschriften */
@@ -55,7 +58,15 @@ body {
 /* Verhindert Scrollen und macht die Seite responsiv */
 html, body {
     height: 100%;
-    overflow: hidden; /* Verhindert das Scrollen */
+    margin: 0;
+    padding: 0;
+}
+
+/* Standard: Verhindere Scrollen auf großen Bildschirmen */
+@media (min-width: 576px) {
+    html, body {
+        overflow: hidden; /* Verhindert Scrollen auf größeren Bildschirmen */
+    }
 }
 
 /* Responsiv - für kleinere Bildschirme */
@@ -67,5 +78,10 @@ html, body {
 
     .menu-item {
         font-size: 1rem;
+    }
+
+    /* Ermöglicht das Scrollen auf kleinen Bildschirmen */
+    html, body {
+        overflow: auto; /* Aktiviert das Scrollen */
     }
 }
