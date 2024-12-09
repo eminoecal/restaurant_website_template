@@ -1,0 +1,60 @@
+/* Lieferservice Inhalt */
+.delivery-card {
+    background: rgba(0, 0, 0, 0.8); /* Halbtransparenter Hintergrund */
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 2; /* Inhalt über Hintergrund */
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Text zentrieren */
+}
+
+.delivery-card .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Spalten zentrieren */
+    gap: 20px; /* Abstand zwischen den Spalten */
+}
+
+.delivery-card .col-md-4 {
+    max-width: 300px; /* Maximale Breite für jede Spalte */
+}
+
+
+/* Überschriften */
+.delivery-card h1, .delivery-card h2, .delivery-card h3 {
+    font-weight: 700;
+}
+
+/* Text */
+.delivery-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f8f9fa;
+}
+
+/* Icons */
+.delivery-card i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+    color: #ffc107;
+}
+
+/* Anpassung für kleinere Geräte */
+@media (max-width: 768px) {
+    .delivery-card {
+        padding: 20px;
+    }
+
+    .delivery-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .delivery-card p {
+        font-size: 1rem;
+    }
+}
