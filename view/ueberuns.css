@@ -8,13 +8,25 @@ body {
 }
 
 /* Hintergrund */
+/* Hintergrund */
 #bg {
+    position: fixed; /* Fixiert den Hintergrund */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("/images/hintergrund_gross_home.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     filter: brightness(40%);
-    z-index: 1; /* Hintergrund bleibt hinter dem Inhalt */
+    z-index: -1; /* Bleibt hinter dem Inhalt */
+}
+
+/* Main-Bereich */
+main {
+    min-height: 100vh; /* Mindestens die Höhe des Viewports */
+    padding-top: 80px; /* Platz für die Navbar */
 }
 
 /* Über uns Inhalt */
@@ -22,22 +34,28 @@ body {
     background: rgba(0, 0, 0, 0.8); /* Halbtransparenter Hintergrund */
     padding: 30px;
     border-radius: 10px;
-    z-index: 2; /* Inhalt über Hintergrund */
     max-width: 900px;
     width: 90%;
+    margin-bottom: 20px; /* Abstand zwischen den Sektionen */
 }
 
-/* Überschriften */
-.about-card h1, .about-card h2 {
-    font-weight: 700;
+/* Google Maps */
+.google-maps iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
-/* Text */
-.about-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #f8f9fa;
+/* Google Rezensionen */
+.google-reviews {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
 }
+
+
 
 /* Anpassung für kleinere Geräte */
 @media (max-width: 768px) {

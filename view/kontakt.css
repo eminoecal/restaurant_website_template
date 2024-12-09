@@ -1,0 +1,24 @@
+.contact-form-container {
+    z-index: 2;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.contact-form-container h1 {
+    font-size: 2.5rem;
+}
+
+.contact-form-container .form-control {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form-container .btn-warning {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
