@@ -1,0 +1,55 @@
+/* Basisstil */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-weight: 100;
+}
+
+/* Hintergrund */
+#bg {
+    background-image: url("/images/hintergrund_gross_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(40%);
+    z-index: 1; /* Hintergrund bleibt hinter dem Inhalt */
+}
+
+/* Über uns Inhalt */
+.about-card {
+    background: rgba(0, 0, 0, 0.8); /* Halbtransparenter Hintergrund */
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 2; /* Inhalt über Hintergrund */
+    max-width: 900px;
+    width: 90%;
+}
+
+/* Überschriften */
+.about-card h1, .about-card h2 {
+    font-weight: 700;
+}
+
+/* Text */
+.about-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f8f9fa;
+}
+
+/* Anpassung für kleinere Geräte */
+@media (max-width: 768px) {
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-card p {
+        font-size: 1rem;
+    }
+}
