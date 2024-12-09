@@ -42,13 +42,13 @@ main {
 /* Google Maps */
 .google-maps iframe {
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
     margin-bottom: 20px;
 }
 
 /* Google Rezensionen */
 .google-reviews {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 8px;
     width: 90%;
