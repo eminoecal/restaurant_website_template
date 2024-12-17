@@ -37,7 +37,7 @@ Bearbeite die Dateien (HTML, CSS, JS) nach deinen Anforderungen.
 ---
 
 ## 🌐 **Demo-Vorschau**  
-![Vorschau der Startseite](https://restaurant-website-template.vercel.app/)  
+![Vorschau der Startseite](https://media.discordapp.net/attachments/345238564608409601/1318546778420678706/Screenshot_2024-12-17_125329.png?ex=6762b7e1&is=67616661&hm=357462efdfa8b4ad36e7b73e5ab453fc92a36a063fa5f992af32d65375c98e70&=&format=webp&quality=lossless&width=687&height=328)  
 > 🎉 **Live-Demo**: [Hier klicken](https://restaurant-website-template.vercel.app/)  
 
 ---
