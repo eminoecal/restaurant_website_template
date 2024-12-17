@@ -38,7 +38,7 @@ Bearbeite die Dateien (HTML, CSS, JS) nach deinen Anforderungen.
 
 ## 🌐 **Demo-Vorschau**  
 ![Vorschau der Startseite](https://via.placeholder.com/800x400?text=Restaurant+Website+Preview)  
-> 🎉 **Live-Demo**: [Hier klicken](https://github.com/eminoecal/restaurant_website_template)  
+> 🎉 **Live-Demo**: [Hier klicken](https://restaurant-website-template.vercel.app/)  
 
 ---
 
